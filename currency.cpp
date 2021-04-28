@@ -1,6 +1,6 @@
 #include "currency.h"
 
-Currency::currency(const string& short_name, const string& name)
+Currency::Currency(const string& short_name, const string& name)
 {
   m_short_name = short_name
 }
