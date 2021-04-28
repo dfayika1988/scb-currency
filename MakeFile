@@ -1,0 +1,9 @@
+all: main.exe
+
+main.exe main.o currency.o
+    g++ -o main.exe main.o currency.o
+main.o: main.cpp
+    g++ -c main.cpp
+currency.o: currency.cpp currency.h
+    g++ -c currency.cpp
+
