@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <vector>
 #include <memory>
@@ -22,8 +23,9 @@ int main()
     }
   
   cout << "Currencies in the list:" << endl;
-  for (auto &prt_ccy: currencies)
+  for (auto &ccy: currencies)
   {
-    cout <<prt_ccy->get_short_name() << endl;
+    cout <<ccy->get_short_name() << endl;
   }
 }
+
