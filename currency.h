@@ -7,14 +7,16 @@ using namespace std;
 
 class Currency
 {
-  string n_short_name;
-  string n_name;
+  string c_name;
+  string c_code;
+
   
 public:
-  Currency(const string& short_name, const string& name):
-         n_short_name(short_name), n_name(name) {}
+  Currency(const string& name, const string& code ):
+         c_name(name), c_code(code)  {}
   ~Currency() = default;
   
-  const string& get_short_name() const;
-  const string& get_name() const;
+  const string& get_c_name() const;
+  const string& get_code() const;
+
 };
