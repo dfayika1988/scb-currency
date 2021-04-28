@@ -1,12 +1,12 @@
 #include "currency.h"
 
 
-const string& Currency::get_short_name() const
+const string& Currency::get_c_name() const
 {
-  return n_short_name;
+  return c_name;
 }
 
-const string& Currency::get_name() const
+const string& Currency::get_code() const
 {
-  return n_name;
+  return c_code;
 }
