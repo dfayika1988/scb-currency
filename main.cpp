@@ -25,7 +25,7 @@ int main()
   cout << "Currencies in the list:" << endl;
   for (auto &ccy: currencies)
   {
-    cout <<ccy->get_short_name() << endl;
+    cout <<ccy->get_c_name() << endl;
   }
 }
 
